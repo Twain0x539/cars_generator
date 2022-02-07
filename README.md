@@ -4,10 +4,6 @@
 
 Image generator which uses pix2pix architecture. Converts edges edges to real car image.
 
-INPUT : 512x512x3 image of black edges
-
-OUTPUT : 512x512x3 reconstructed image
-
 ## Usage
 
 INPUT : 512x512x3 image of edges( (255,255,255) for edge pixels, (0,0,0) otherwise)
