@@ -1,4 +1,4 @@
-# pix2pix cars generator
+# edges2cars generator
 
 ![Example](https://user-images.githubusercontent.com/40434685/152781187-e99c6d0e-2f34-4b88-b222-868f6ab96bb1.png)
 
