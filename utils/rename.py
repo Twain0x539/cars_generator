@@ -3,7 +3,7 @@ import os
 from os import listdir
 from os.path import isfile, join
 
-path = 'C:\CarsDataset\cars_test\cars_test\\'
+path = 'F:\edges2cars\cars_generator\cars_test\cars_test\\'
 
 
 onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]

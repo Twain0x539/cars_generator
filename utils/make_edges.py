@@ -3,14 +3,13 @@ import os
 from os import listdir
 from os.path import isfile, join
 import numpy as np
-from cv2 import resize
 
 
-path = 'C:\CarsDataset\cars_train\\'
-GEN_PATH = 'C:\CarsDataset\\'
+path = 'F:\edges2cars\cars_generator\cars_train\cars_train\\'
+GEN_PATH = 'F:\edges2cars\cars_generator\\'
 
 RESIZE = 256
-LOWER_THRESH = 210
+LOWER_THRESH = 130
 HIGHER_THRESH = 260
 
 
@@ -24,6 +23,11 @@ def get_contour(img_gray):
 
 onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
 os.chdir(GEN_PATH)
+try:
+    os.makedirs(f'output{RESIZE}')
+    os.makedirs(f'input{RESIZE}')
+except FileExistsError:
+    pass
 for file in onlyfiles:
     print(file)
     image = cv2.imread(path + file, cv2.IMREAD_COLOR)

@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+generator*
+input*
+output*
+cars*
+*.jpg
