@@ -5,12 +5,12 @@ from os.path import isfile, join
 import numpy as np
 
 
-path = 'F:\edges2cars\cars_generator\cars_train\cars_train\\'
+ORIGINAL_PATH = 'F:\edges2cars\cars_generator\cars_train\cars_train\\'
 GEN_PATH = 'F:\edges2cars\cars_generator\\'
+RESIZE = 512
+LOWER_THRESH = 255/3
+HIGHER_THRESH = 255
 
-RESIZE = 256
-LOWER_THRESH = 130
-HIGHER_THRESH = 260
 
 
 def get_contour(img_gray):
@@ -21,18 +21,21 @@ def get_contour(img_gray):
     return blank_image
 
 
-onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
-os.chdir(GEN_PATH)
-try:
-    os.makedirs(f'output{RESIZE}')
-    os.makedirs(f'input{RESIZE}')
-except FileExistsError:
-    pass
-for file in onlyfiles:
-    print(file)
-    image = cv2.imread(path + file, cv2.IMREAD_COLOR)
-    image = cv2.resize(image, (RESIZE,RESIZE))
-    print(cv2.imwrite(f'output{RESIZE}' + '\\' + file, image))
-    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    contour = get_contour(gray_image)
-    cv2.imwrite(f'input{RESIZE}' + '\\' + file, contour)
+
+
+if __name__ == "__main__":
+    onlyfiles = [f for f in listdir(ORIGINAL_PATH) if isfile(join(ORIGINAL_PATH, f))]
+    os.chdir(GEN_PATH)
+    try:
+        os.makedirs(f'output{RESIZE}')
+        os.makedirs(f'input{RESIZE}')
+    except FileExistsError:
+        pass
+    for file in onlyfiles:
+        print(file)
+        image = cv2.imread(ORIGINAL_PATH + file, cv2.IMREAD_COLOR)
+        image = cv2.resize(image, (RESIZE,RESIZE))
+        print(cv2.imwrite(f'output{RESIZE}' + '\\' + file, image))
+        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        contour = get_contour(gray_image)
+        cv2.imwrite(f'input{RESIZE}' + '\\' + file, contour)

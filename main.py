@@ -5,6 +5,7 @@ import sys
 import matplotlib.pyplot as plt
 
 PATH_TO_GEN = 'generator_v2_20epochs_loss_13.097846984863281'
+IMAGE_SIZE = 256
 
 from torch import nn
 import torch
@@ -103,6 +104,7 @@ if __name__ == "__main__":
     dir_list = input_path.split(sep='\\')
     filename = dir_list[-1]
     image = cv2.imread(input_path)
+    image = image.resize(image, (IMAGE_SIZE,IMAGE_SIZE))
     image = torch.Tensor(image) / 255
     image = image.to(device)
     image = torch.permute(image, (2, 1, 0)).unsqueeze(0)
