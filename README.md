@@ -29,3 +29,4 @@ reconstructed image will be saved to the same directory as original one with pre
 
 ## Download
 download link: https://drive.google.com/file/d/1blwwKUOR-NRgtkebG3M5pIHnbhbURmyV/view?usp=sharing
+generator only(torch): https://drive.google.com/file/d/1vhWow16sAj73wEkgoRVL1FrGL36YTsdI/view 
