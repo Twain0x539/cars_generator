@@ -2,7 +2,7 @@
 
 ![Example](https://user-images.githubusercontent.com/40434685/152781187-e99c6d0e-2f34-4b88-b222-868f6ab96bb1.png)
 
-Image generator which uses pix2pix architecture. Converts edges edges to real car image.
+Image generator which uses pix2pix architecture. Converts car's edge to real car image.
 
 # Dependencies
 torch,
