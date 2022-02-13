@@ -19,6 +19,7 @@ OUTPUT : 512x512x3 reconstructed image
 You can use generator by command line:
 
 `python main.py %edge_image.jpg%` , where %edge_image.jpg% is a path to image you want to transform 
+reconstructed image will be saved to the same directory as original one with prefix "rec_"
 
 ## Related links
   1. [Pix2pix example](https://learnopencv.com/paired-image-to-image-translation-pix2pix/) 
