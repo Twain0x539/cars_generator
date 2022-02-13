@@ -4,7 +4,7 @@ import cv2
 import sys
 from generator import GeneratorUNET
 
-PATH_TO_GEN = 'NEW512generator_v2_30 epochs loss 8.945698738098145'
+PATH_TO_GEN = '512generator'
 IMAGE_SIZE = 512
 
 if __name__ == "__main__":
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     dir_list = input_path.split(sep='\\')
     filename = dir_list[-1]
     image = cv2.imread(input_path)
-    image = cv2.resize(image, (IMAGE_SIZE,IMAGE_SIZE))
+    image = cv2.resize(image, (IMAGE_SIZE, IMAGE_SIZE))
     image = torch.Tensor(image) / 255
     image = image.to(device)
     image = torch.permute(image, (2, 1, 0)).unsqueeze(0)
