@@ -4,6 +4,10 @@
 
 Image generator which uses pix2pix architecture. Converts edges edges to real car image.
 
+# Dependecies
+torch
+cv2
+
 ## Usage
 
 INPUT : 512x512x3 image of edges( (255,255,255) for edge pixels, (0,0,0) otherwise)
@@ -20,3 +24,7 @@ You can use generator by command line:
   1. [Pix2pix example](https://learnopencv.com/paired-image-to-image-translation-pix2pix/) 
   2. [Original Cars Dataset](https://www.kaggle.com/jessicali9530/stanford-cars-dataset/code)
   3. [Transformed Cars Dataset 512x512]()
+
+
+## Download
+download: 
