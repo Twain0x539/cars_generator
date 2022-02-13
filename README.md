@@ -5,7 +5,7 @@
 Image generator which uses pix2pix architecture. Converts edges edges to real car image.
 
 # Dependencies
-torch
+torch,
 cv2
 
 ## Usage
@@ -28,4 +28,4 @@ reconstructed image will be saved to the same directory as original one with pre
 
 
 ## Download
-download link: *** 
+download link: https://drive.google.com/file/d/1blwwKUOR-NRgtkebG3M5pIHnbhbURmyV/view?usp=sharing
