@@ -4,7 +4,7 @@
 
 Image generator which uses pix2pix architecture. Converts edges edges to real car image.
 
-# Dependecies
+# Dependencies
 torch
 cv2
 
@@ -27,4 +27,4 @@ You can use generator by command line:
 
 
 ## Download
-download: 
+download link: *** 
