@@ -2,7 +2,7 @@ import torch
 from torch import load, nn
 import cv2
 import sys
-from generator import GeneratorUNET
+from models import GeneratorUNET, PatchDicriminator
 
 PATH_TO_GEN = '512generator'
 IMAGE_SIZE = 512
