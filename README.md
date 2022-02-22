@@ -36,7 +36,7 @@ reconstructed image will be saved to the same directory as original one with pre
   1. [Pix2pix example](https://learnopencv.com/paired-image-to-image-translation-pix2pix/) 
   2. [Original Cars Dataset](https://www.kaggle.com/jessicali9530/stanford-cars-dataset/code)
   3. [Transformed Cars Dataset 512x512](https://www.kaggle.com/mihailkaraev/cars-edges-512x512?select=output512)
-  4. [Kaggle notebook] (https://www.kaggle.com/mihailkaraev/cars2edges-512/notebook)
+  4. [Kaggle notebook](https://www.kaggle.com/mihailkaraev/cars2edges-512/notebook)
 
 ## Download
 download link: https://drive.google.com/file/d/1blwwKUOR-NRgtkebG3M5pIHnbhbURmyV/view?usp=sharing
