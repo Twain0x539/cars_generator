@@ -16,7 +16,6 @@ INPUT : 512x512x3 image of edges( (255,255,255) for edge pixels, (0,0,0) otherwi
 OUTPUT : 512x512x3 reconstructed image
 
 
-
 You can use generator by command line:
 
 `python main.py %edge_image.jpg%` , where %edge_image.jpg% is a path to image you want to transform 
@@ -25,8 +24,8 @@ reconstructed image will be saved to the same directory as original one with pre
 ## Related links
   1. [Pix2pix example](https://learnopencv.com/paired-image-to-image-translation-pix2pix/) 
   2. [Original Cars Dataset](https://www.kaggle.com/jessicali9530/stanford-cars-dataset/code)
-  3. [Transformed Cars Dataset 512x512]()
-
+  3. [Transformed Cars Dataset 512x512](https://www.kaggle.com/mihailkaraev/cars-edges-512x512?select=output512)
+  4. [Kaggle notebook] (https://www.kaggle.com/mihailkaraev/cars2edges-512/notebook)
 
 ## Download
 download link: https://drive.google.com/file/d/1blwwKUOR-NRgtkebG3M5pIHnbhbURmyV/view?usp=sharing
