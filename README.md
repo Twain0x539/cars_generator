@@ -32,6 +32,9 @@ You can use generator by command line:
 `python generate.py %edge_image.jpg%` , where %edge_image.jpg% is a path to image you want to transform 
 reconstructed image will be saved to the same directory as original one with prefix "rec_"
 
+
+## Training
+You can train model with train.py, but it's better to do it with kaggle(link below)
 ## Related links
   1. [Pix2pix example](https://learnopencv.com/paired-image-to-image-translation-pix2pix/) 
   2. [Original Cars Dataset](https://www.kaggle.com/jessicali9530/stanford-cars-dataset/code)
