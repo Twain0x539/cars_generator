@@ -5,9 +5,14 @@
 Image generator which uses pix2pix architecture. Converts car's edge to real car image.
 
 # Dependencies
-torch,
+ipython==8.0.1
+matplotlib==3.3.3
+numpy==1.19.4
+opencv_python==4.5.4.58
+pandas==1.2.0
+torch==1.10.0+cu113
+torchvision==0.11.1+cu113
 
-cv2
 
 ## Usage
 
