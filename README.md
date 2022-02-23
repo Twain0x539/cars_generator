@@ -44,4 +44,7 @@ You can train model with train.py, but it's better to do it with kaggle(link bel
 ## Download
 download link: https://drive.google.com/file/d/1blwwKUOR-NRgtkebG3M5pIHnbhbURmyV/view?usp=sharing
 
-generator only(torch): https://drive.google.com/file/d/1vhWow16sAj73wEkgoRVL1FrGL36YTsdI/view 
+generator only(torch): https://drive.google.com/file/d/1vhWow16sAj73wEkgoRVL1FrGL36YTsdI/view
+
+## Description
+I took dataset from 15k images of cars, then transformed it to 512x512 and made edges of it. After trained pix2pix GAN(generator simular to UNet, discriminator is patch discriminator). I also tried do it only on cars without background, but there are not enough images(500 in original dataset) so in result I left all images.
